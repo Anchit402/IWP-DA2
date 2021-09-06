@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="./login.css" />
+		<title>Login Page</title>
+	</head>
+	<body>
+		<nav>
+			<h1>Login page</h1>
+			<div>
+				<a href="../index.html">Home</a> /
+				<a href="../register/register.html">Register</a>
+			</div>
+		</nav>
+		<div id="form-content">
+			<form
+				action="../index.html"
+				name="myForm"
+				onSubmit="return validateForm()"
+			>
+				<div id="heading">Form for Student Login</div>
+				<center><span>*</span> Specifies mandatory field</center>
+
+				<h3>2. Enter your email ID (only gmail allowed)<span>*</span></h3>
+				<input type="text" placeholder="Eg. abc@gmail.com" name="email" />
+
+				<h3>
+					4. Enter a password (special symbol 4 numbers 1 letter[capital])<span
+						>*</span
+					>
+				</h3>
+				<input type="password" placeholder="Eg.@1234A" name="password" />
+
+				<center>
+					<input type="submit" />
+					<input type="reset" />
+				</center>
+			</form>
+		</div>
+		<script src="./login.js"></script>
+	</body>
+</html>
